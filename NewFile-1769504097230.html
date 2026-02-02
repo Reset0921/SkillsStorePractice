@@ -133,10 +133,10 @@
           <span class="font-bold text-xl gradient-text">Claude Skills</span>
         </div>
         <div class="hidden md:flex space-x-8">
-          <a href="#background" class="nav-link text-gray-600 hover:text-purple-600 transition">背景</a>
-          <a href="#definition" class="nav-link text-gray-600 hover:text-purple-600 transition">定义</a>
-          <a href="#advantages" class="nav-link text-gray-600 hover:text-purple-600 transition">优势</a>
-          <a href="#architecture" class="nav-link text-gray-600 hover:text-purple-600 transition">架构</a>
+          <a href="#what-is" class="nav-link text-gray-600 hover:text-purple-600 transition">什么是Skills</a>
+          <a href="#why-use" class="nav-link text-gray-600 hover:text-purple-600 transition">有什么用</a>
+          <a href="#how-to" class="nav-link text-gray-600 hover:text-purple-600 transition">怎么使用</a>
+          <a href="#improvements" class="nav-link text-gray-600 hover:text-purple-600 transition">提升方面</a>
           <a href="#example" class="nav-link text-gray-600 hover:text-purple-600 transition">实例</a>
           <a href="#future" class="nav-link text-gray-600 hover:text-purple-600 transition">未来</a>
         </div>
@@ -160,53 +160,90 @@
           一文了解 Anthropic 新推出的 Claude agent 的 Skills 标准
         </p>
         <div class="flex justify-center space-x-4">
-          <a href="#background" class="px-8 py-3 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-lg font-medium hover:shadow-lg transition">
+          <a href="#what-is" class="px-8 py-3 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-lg font-medium hover:shadow-lg transition">
             开始学习
           </a>
-          <a href="#example" class="px-8 py-3 bg-white text-purple-600 border-2 border-purple-600 rounded-lg font-medium hover:bg-purple-50 transition">
-            查看实例
+          <a href="#how-to" class="px-8 py-3 bg-white text-purple-600 border-2 border-purple-600 rounded-lg font-medium hover:bg-purple-50 transition">
+            快速上手
           </a>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- Background Section -->
-  <section id="background" class="py-20 bg-white">
+  <!-- 1. 什么是 Skills Section -->
+  <section id="what-is" class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
-        <h2 class="text-4xl font-bold mb-4">背景</h2>
+        <div class="inline-block px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm font-medium mb-4">
+          <i class="fas fa-question-circle mr-2"></i>核心问题 1
+        </div>
+        <h2 class="text-4xl font-bold mb-4">什么是 Skills?</h2>
         <div class="section-divider w-24 mx-auto mb-6"></div>
-        <p class="text-gray-600 text-lg max-w-2xl mx-auto">
-          Agent 的问题,不在智能,而在「专业性」
+        <p class="text-gray-600 text-lg max-w-3xl mx-auto">
+          Skills 是 Anthropic 推出的 Claude Agent 能力扩展标准，让 AI 拥有可复用的「专业技能」
         </p>
       </div>
 
-      <div class="grid md:grid-cols-2 gap-12 mb-16">
+      <!-- 核心定义 -->
+      <div class="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-2xl p-8 md:p-12 mb-12">
+        <div class="flex flex-col md:flex-row items-center md:items-start gap-8">
+          <div class="w-24 h-24 bg-gradient-to-br from-purple-600 to-indigo-600 rounded-3xl flex items-center justify-center flex-shrink-0">
+            <i class="fas fa-folder-open text-white text-4xl"></i>
+          </div>
+          <div class="flex-1 text-center md:text-left">
+            <h3 class="text-3xl font-bold mb-4 gradient-text">Skill = 装着「专业流程」的文件夹</h3>
+            <p class="text-xl text-gray-700 mb-6">
+              不是模型参数，不是简单的 Prompt，不是黑盒工具，而是<span class="font-bold text-purple-600">结构化的专业知识包</span>
+            </p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+              <div class="bg-white p-4 rounded-xl text-center">
+                <i class="fas fa-file-alt text-purple-600 text-2xl mb-2"></i>
+                <p class="text-sm font-medium">SKILL.md</p>
+                <p class="text-xs text-gray-500">使用说明</p>
+              </div>
+              <div class="bg-white p-4 rounded-xl text-center">
+                <i class="fas fa-list-ol text-indigo-600 text-2xl mb-2"></i>
+                <p class="text-sm font-medium">执行流程</p>
+                <p class="text-xs text-gray-500">工作步骤</p>
+              </div>
+              <div class="bg-white p-4 rounded-xl text-center">
+                <i class="fas fa-code text-blue-600 text-2xl mb-2"></i>
+                <p class="text-sm font-medium">脚本代码</p>
+                <p class="text-xs text-gray-500">可执行逻辑</p>
+              </div>
+              <div class="bg-white p-4 rounded-xl text-center">
+                <i class="fas fa-puzzle-piece text-green-600 text-2xl mb-2"></i>
+                <p class="text-sm font-medium">模板资源</p>
+                <p class="text-xs text-gray-500">辅助材料</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 类比说明 -->
+      <div class="grid md:grid-cols-2 gap-8 mb-12">
         <div class="comparison-card agent bg-red-50 p-8 rounded-xl card-hover">
           <div class="flex items-center mb-4">
             <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mr-4">
               <i class="fas fa-robot text-red-600 text-xl"></i>
             </div>
-            <h3 class="text-2xl font-bold text-red-700">传统 Agent</h3>
+            <h3 class="text-2xl font-bold text-red-700">没有 Skill 的 Agent</h3>
           </div>
-          <p class="text-gray-700 mb-4">像一个极其聪明但毫无行业经验的新人</p>
+          <p class="text-gray-700 mb-4">像一个 IQ 300 但毫无行业经验的新人</p>
           <ul class="space-y-2 text-gray-600">
             <li class="flex items-start">
-              <i class="fas fa-check text-red-500 mr-2 mt-1"></i>
-              <span>可以推理、写代码、调用 API</span>
+              <i class="fas fa-times text-red-500 mr-2 mt-1"></i>
+              <span>每次都要反复解释背景</span>
             </li>
             <li class="flex items-start">
               <i class="fas fa-times text-red-500 mr-2 mt-1"></i>
-              <span>并不真正懂你的工作</span>
+              <span>行为不稳定、不一致</span>
             </li>
             <li class="flex items-start">
               <i class="fas fa-times text-red-500 mr-2 mt-1"></i>
-              <span>每次对话都要反复解释背景</span>
-            </li>
-            <li class="flex items-start">
-              <i class="fas fa-times text-red-500 mr-2 mt-1"></i>
-              <span>行为不稳定、不一致、不可复用</span>
+              <span>知识无法沉淀和复用</span>
             </li>
           </ul>
         </div>
@@ -216,119 +253,294 @@
             <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
               <i class="fas fa-cube text-green-600 text-xl"></i>
             </div>
-            <h3 class="text-2xl font-bold text-green-700">Skill 方案</h3>
+            <h3 class="text-2xl font-bold text-green-700">有 Skill 的 Agent</h3>
           </div>
-          <p class="text-gray-700 mb-4">可复用的专业能力</p>
+          <p class="text-gray-700 mb-4">像一个有 10 年临床经验的专业医生</p>
           <ul class="space-y-2 text-gray-600">
             <li class="flex items-start">
               <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
-              <span>专业知识被整理、固化</span>
+              <span>专业知识已被固化</span>
             </li>
             <li class="flex items-start">
               <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
-              <span>可反复调用的专业流程</span>
+              <span>行为可预测、可复制</span>
             </li>
             <li class="flex items-start">
               <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
-              <span>行为可预测、可复制、可传承</span>
-            </li>
-            <li class="flex items-start">
-              <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
-              <span>真正的知识沉淀</span>
+              <span>经验可传承和共享</span>
             </li>
           </ul>
         </div>
       </div>
 
-      <div class="bg-gradient-to-r from-purple-50 to-indigo-50 p-8 rounded-xl">
-        <div class="flex items-start">
-          <div class="flex-shrink-0">
-            <i class="fas fa-lightbulb text-3xl text-purple-600"></i>
-          </div>
-          <div class="ml-6">
-            <h4 class="text-xl font-bold mb-3">关键洞察</h4>
-            <p class="text-gray-700 mb-4">
-              Anthropic 团队在实践中发现:Agent 本身已经足够通用了。真正稀缺的,不是「会思考的东西」,而是
-              <span class="font-bold text-purple-600">被整理、被固化、能反复调用的专业流程</span>。
-            </p>
-            <p class="text-gray-600 italic">
-              "看病时,你会选一个 IQ 300、记得住所有医学理论的天才,还是一个做了十年临床的一线医生?"
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Definition Section -->
-  <section id="definition" class="py-20 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
-        <h2 class="text-4xl font-bold mb-4">什么是 Skill?</h2>
-        <div class="section-divider w-24 mx-auto mb-6"></div>
-      </div>
-
-      <div class="bg-white rounded-2xl shadow-lg p-8 md:p-12 mb-12">
-        <div class="flex items-center mb-6">
-          <div class="w-16 h-16 bg-gradient-to-br from-purple-600 to-indigo-600 rounded-2xl flex items-center justify-center mr-6">
-            <i class="fas fa-folder-open text-white text-2xl"></i>
-          </div>
-          <div>
-            <h3 class="text-2xl font-bold">Skill = 一个装着"专业流程"的文件夹</h3>
-            <p class="text-gray-600">不是模型参数,不是 Prompt,不是黑盒工具</p>
-          </div>
-        </div>
-
-        <div class="grid md:grid-cols-2 gap-8 mt-8">
-          <div class="space-y-4">
-            <div class="flex items-start p-4 bg-purple-50 rounded-lg">
-              <i class="fas fa-file-alt text-purple-600 text-xl mr-4 mt-1"></i>
-              <div>
-                <h4 class="font-bold mb-1">使用说明 (SKILL.md)</h4>
-                <p class="text-gray-600 text-sm">清晰的使用指南和文档</p>
-              </div>
-            </div>
-            <div class="flex items-start p-4 bg-indigo-50 rounded-lg">
-              <i class="fas fa-list-ol text-indigo-600 text-xl mr-4 mt-1"></i>
-              <div>
-                <h4 class="font-bold mb-1">明确的执行流程</h4>
-                <p class="text-gray-600 text-sm">结构化的工作步骤</p>
-              </div>
-            </div>
-          </div>
-          <div class="space-y-4">
-            <div class="flex items-start p-4 bg-blue-50 rounded-lg">
-              <i class="fas fa-code text-blue-600 text-xl mr-4 mt-1"></i>
-              <div>
-                <h4 class="font-bold mb-1">可运行的脚本或代码</h4>
-                <p class="text-gray-600 text-sm">实际可执行的逻辑</p>
-              </div>
-            </div>
-            <div class="flex items-start p-4 bg-green-50 rounded-lg">
-              <i class="fas fa-puzzle-piece text-green-600 text-xl mr-4 mt-1"></i>
-              <div>
-                <h4 class="font-bold mb-1">模板、示例、资源文件</h4>
-                <p class="text-gray-600 text-sm">辅助材料和参考</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <div class="text-center">
         <div class="inline-block px-8 py-4 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-xl">
-          <p class="text-2xl font-bold">本质:经验的封装</p>
+          <p class="text-2xl font-bold"><i class="fas fa-lightbulb mr-3"></i>本质：经验的封装，知识的资产化</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Advantages Section -->
-  <section id="advantages" class="py-20 bg-white">
+  <!-- 2. 有什么用 Section -->
+  <section id="why-use" class="py-20 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
-        <h2 class="text-4xl font-bold mb-4">为什么 Skill 比 Tool、Prompt 都优?</h2>
+        <div class="inline-block px-4 py-2 bg-indigo-100 text-indigo-700 rounded-full text-sm font-medium mb-4">
+          <i class="fas fa-bullseye mr-2"></i>核心问题 2
+        </div>
+        <h2 class="text-4xl font-bold mb-4">Skills 有什么用?</h2>
         <div class="section-divider w-24 mx-auto mb-6"></div>
+        <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+          从个人效率提升到企业级知识管理，Skills 带来全方位价值
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <!-- 用途1 -->
+        <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+          <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center mb-6">
+            <i class="fas fa-rocket text-white text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">自动化重复任务</h3>
+          <p class="text-gray-600 mb-4">将常见的工作流程固化为 Skill，一键触发复杂操作</p>
+          <div class="bg-blue-50 p-3 rounded-lg">
+            <p class="text-sm text-blue-700"><i class="fas fa-check mr-2"></i>如：一键创建微应用、自动生成测试用例</p>
+          </div>
+        </div>
+
+        <!-- 用途2 -->
+        <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+          <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-500 rounded-2xl flex items-center justify-center mb-6">
+            <i class="fas fa-users text-white text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">团队知识共享</h3>
+          <p class="text-gray-600 mb-4">专家经验不再是「老师傅的秘诀」，而是可分享的数字资产</p>
+          <div class="bg-green-50 p-3 rounded-lg">
+            <p class="text-sm text-green-700"><i class="fas fa-check mr-2"></i>如：代码规范检查、部署流程标准化</p>
+          </div>
+        </div>
+
+        <!-- 用途3 -->
+        <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+          <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center mb-6">
+            <i class="fas fa-shield-alt text-white text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">保证行为一致性</h3>
+          <p class="text-gray-600 mb-4">同样的任务，每次都按照标准流程执行，结果可预测</p>
+          <div class="bg-purple-50 p-3 rounded-lg">
+            <p class="text-sm text-purple-700"><i class="fas fa-check mr-2"></i>如：安全审计、合规检查</p>
+          </div>
+        </div>
+
+        <!-- 用途4 -->
+        <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+          <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-500 rounded-2xl flex items-center justify-center mb-6">
+            <i class="fas fa-graduation-cap text-white text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">加速新人上手</h3>
+          <p class="text-gray-600 mb-4">新员工通过 Skills 快速掌握团队最佳实践</p>
+          <div class="bg-orange-50 p-3 rounded-lg">
+            <p class="text-sm text-orange-700"><i class="fas fa-check mr-2"></i>如：开发环境配置、项目初始化</p>
+          </div>
+        </div>
+
+        <!-- 用途5 -->
+        <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+          <div class="w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-2xl flex items-center justify-center mb-6">
+            <i class="fas fa-history text-white text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">版本控制与演进</h3>
+          <p class="text-gray-600 mb-4">Skill 是文件，可以用 Git 管理、回滚、审计</p>
+          <div class="bg-indigo-50 p-3 rounded-lg">
+            <p class="text-sm text-indigo-700"><i class="fas fa-check mr-2"></i>如：追踪流程变更、A/B 测试不同策略</p>
+          </div>
+        </div>
+
+        <!-- 用途6 -->
+        <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+          <div class="w-16 h-16 bg-gradient-to-br from-teal-500 to-green-500 rounded-2xl flex items-center justify-center mb-6">
+            <i class="fas fa-expand-arrows-alt text-white text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">能力无限扩展</h3>
+          <p class="text-gray-600 mb-4">Agent 可以「拥有」上百个 Skills，按需加载</p>
+          <div class="bg-teal-50 p-3 rounded-lg">
+            <p class="text-sm text-teal-700"><i class="fas fa-check mr-2"></i>如：多语言翻译、多平台发布</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white p-8 rounded-2xl">
+        <div class="flex items-center justify-center">
+          <i class="fas fa-quote-left text-4xl opacity-50 mr-4"></i>
+          <p class="text-xl font-medium">
+            真正稀缺的不是「会思考的 AI」，而是<span class="font-bold">被整理、被固化、能反复调用的专业流程</span>
+          </p>
+          <i class="fas fa-quote-right text-4xl opacity-50 ml-4"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. 怎么使用 Section -->
+  <section id="how-to" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <div class="inline-block px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-medium mb-4">
+          <i class="fas fa-play-circle mr-2"></i>核心问题 3
+        </div>
+        <h2 class="text-4xl font-bold mb-4">怎么使用 Skills?</h2>
+        <div class="section-divider w-24 mx-auto mb-6"></div>
+        <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+          三种方式使用 Skills：安装现有的、创建自己的、或让 AI 自动调用
+        </p>
+      </div>
+
+      <!-- 使用方式 -->
+      <div class="grid md:grid-cols-3 gap-8 mb-16">
+        <!-- 方式1：安装 -->
+        <div class="bg-gradient-to-br from-blue-50 to-cyan-50 p-8 rounded-2xl">
+          <div class="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center mb-6">
+            <i class="fas fa-download text-white text-2xl"></i>
+          </div>
+          <h3 class="text-2xl font-bold mb-4">1. 安装现有 Skill</h3>
+          <div class="space-y-4">
+            <div class="bg-white p-4 rounded-lg">
+              <p class="font-medium mb-2">从官方仓库获取</p>
+              <code class="text-sm bg-gray-100 px-2 py-1 rounded">anthropics/skills</code>
+            </div>
+            <div class="bg-white p-4 rounded-lg">
+              <p class="font-medium mb-2">从社区获取</p>
+              <code class="text-sm bg-gray-100 px-2 py-1 rounded">awesome-claude-skills</code>
+            </div>
+            <div class="bg-white p-4 rounded-lg">
+              <p class="font-medium mb-2">放置位置</p>
+              <code class="text-sm bg-gray-100 px-2 py-1 rounded">.claude/skills/</code>
+            </div>
+          </div>
+        </div>
+
+        <!-- 方式2：创建 -->
+        <div class="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-2xl">
+          <div class="w-16 h-16 bg-green-600 rounded-2xl flex items-center justify-center mb-6">
+            <i class="fas fa-hammer text-white text-2xl"></i>
+          </div>
+          <h3 class="text-2xl font-bold mb-4">2. 创建自己的 Skill</h3>
+          <div class="space-y-4">
+            <div class="bg-white p-4 rounded-lg">
+              <p class="font-medium mb-2">Step 1: 创建文件夹</p>
+              <code class="text-sm bg-gray-100 px-2 py-1 rounded">mkdir my-skill</code>
+            </div>
+            <div class="bg-white p-4 rounded-lg">
+              <p class="font-medium mb-2">Step 2: 编写 SKILL.md</p>
+              <p class="text-sm text-gray-600">定义名称、用途、流程</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg">
+              <p class="font-medium mb-2">Step 3: 添加脚本/模板</p>
+              <p class="text-sm text-gray-600">可选的辅助文件</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 方式3：调用 -->
+        <div class="bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-2xl">
+          <div class="w-16 h-16 bg-purple-600 rounded-2xl flex items-center justify-center mb-6">
+            <i class="fas fa-magic text-white text-2xl"></i>
+          </div>
+          <h3 class="text-2xl font-bold mb-4">3. 触发 Skill</h3>
+          <div class="space-y-4">
+            <div class="bg-white p-4 rounded-lg">
+              <p class="font-medium mb-2">斜杠命令</p>
+              <code class="text-sm bg-gray-100 px-2 py-1 rounded">/skill-name</code>
+            </div>
+            <div class="bg-white p-4 rounded-lg">
+              <p class="font-medium mb-2">自然语言</p>
+              <p class="text-sm text-gray-600">"帮我创建一个微应用"</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg">
+              <p class="font-medium mb-2">自动识别</p>
+              <p class="text-sm text-gray-600">AI 根据任务自动选择</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SKILL.md 结构示例 -->
+      <div class="bg-gray-50 rounded-2xl p-8">
+        <h3 class="text-2xl font-bold mb-6 text-center">SKILL.md 基本结构</h3>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="code-block p-6">
+            <pre><code class="text-sm"># my-awesome-skill
+
+这个 Skill 用于 [描述用途]
+
+## 使用方式
+
+说 "xxx" 或 "/my-awesome-skill" 触发
+
+## 执行流程
+
+1. 第一步：检查环境
+2. 第二步：执行操作
+3. 第三步：输出结果
+
+## 参数说明
+
+| 参数 | 说明 | 示例 |
+|------|------|------|
+| name | 名称 | test |
+
+## 注意事项
+
+- 注意点 1
+- 注意点 2</code></pre>
+          </div>
+          <div class="space-y-4">
+            <div class="flex items-start p-4 bg-white rounded-lg">
+              <i class="fas fa-hashtag text-purple-600 text-xl mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-bold">标题和描述</h4>
+                <p class="text-gray-600 text-sm">简明扼要说明 Skill 的用途</p>
+              </div>
+            </div>
+            <div class="flex items-start p-4 bg-white rounded-lg">
+              <i class="fas fa-terminal text-indigo-600 text-xl mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-bold">使用方式</h4>
+                <p class="text-gray-600 text-sm">定义触发命令和关键词</p>
+              </div>
+            </div>
+            <div class="flex items-start p-4 bg-white rounded-lg">
+              <i class="fas fa-list-ol text-blue-600 text-xl mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-bold">执行流程</h4>
+                <p class="text-gray-600 text-sm">清晰的步骤指引</p>
+              </div>
+            </div>
+            <div class="flex items-start p-4 bg-white rounded-lg">
+              <i class="fas fa-table text-green-600 text-xl mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-bold">参数说明</h4>
+                <p class="text-gray-600 text-sm">可配置的选项</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. 提升在哪些方面 Section -->
+  <section id="improvements" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <div class="inline-block px-4 py-2 bg-orange-100 text-orange-700 rounded-full text-sm font-medium mb-4">
+          <i class="fas fa-chart-line mr-2"></i>核心问题 4
+        </div>
+        <h2 class="text-4xl font-bold mb-4">Skills 在哪些方面带来提升?</h2>
+        <div class="section-divider w-24 mx-auto mb-6"></div>
+        <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+          相比传统的 Prompt、Tool、MCP，Skills 在多个维度实现质的飞跃
+        </p>
       </div>
 
       <div class="grid md:grid-cols-3 gap-8">
@@ -399,116 +611,6 @@
     </div>
   </section>
 
-  <!-- Architecture Section -->
-  <section id="architecture" class="py-20 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
-        <h2 class="text-4xl font-bold mb-4">Skill × MCP,完整的 Agent 架构</h2>
-        <div class="section-divider w-24 mx-auto mb-6"></div>
-        <p class="text-gray-600 text-lg max-w-2xl mx-auto">
-          Anthropic 在实践中逐渐形成了一套清晰的分层结构
-        </p>
-      </div>
-
-      <div class="grid md:grid-cols-2 gap-8 mb-12">
-        <div class="space-y-8">
-          <div class="architecture-box">
-            <div class="flex items-center">
-              <div class="w-12 h-12 bg-gradient-to-br from-purple-600 to-indigo-600 rounded-xl flex items-center justify-center mr-4">
-                <i class="fas fa-brain text-white text-xl"></i>
-              </div>
-              <div>
-                <h4 class="text-xl font-bold">模型 (Model)</h4>
-                <p class="text-gray-600">负责思考和推理</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="architecture-box">
-            <div class="flex items-center">
-              <div class="w-12 h-12 bg-gradient-to-br from-indigo-600 to-blue-600 rounded-xl flex items-center justify-center mr-4">
-                <i class="fas fa-cogs text-white text-xl"></i>
-              </div>
-              <div>
-                <h4 class="text-xl font-bold">运行时 (Runtime)</h4>
-                <p class="text-gray-600">提供文件系统、代码执行能力</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="architecture-box">
-            <div class="flex items-center">
-              <div class="w-12 h-12 bg-gradient-to-br from-blue-600 to-cyan-600 rounded-xl flex items-center justify-center mr-4">
-                <i class="fas fa-plug text-white text-xl"></i>
-              </div>
-              <div>
-                <h4 class="text-xl font-bold">MCP Server</h4>
-                <p class="text-gray-600">连接外部世界(API、数据、系统)</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="architecture-box">
-            <div class="flex items-center">
-              <div class="w-12 h-12 bg-gradient-to-br from-cyan-600 to-teal-600 rounded-xl flex items-center justify-center mr-4">
-                <i class="fas fa-cube text-white text-xl"></i>
-              </div>
-              <div>
-                <h4 class="text-xl font-bold">Skill</h4>
-                <p class="text-gray-600">提供专业判断与执行方式</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-white rounded-2xl shadow-lg p-8">
-          <h3 class="text-2xl font-bold mb-6">职责分工</h3>
-          <div class="space-y-6">
-            <div class="flex items-start p-4 bg-purple-50 rounded-lg">
-              <div class="w-10 h-10 bg-purple-600 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
-                <i class="fas fa-plug text-white"></i>
-              </div>
-              <div>
-                <h4 class="font-bold text-purple-700">MCP 负责「能做什么」</h4>
-                <p class="text-gray-600 text-sm mt-1">提供工具和外部连接能力</p>
-              </div>
-            </div>
-
-            <div class="flex items-start p-4 bg-indigo-50 rounded-lg">
-              <div class="w-10 h-10 bg-indigo-600 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
-                <i class="fas fa-cube text-white"></i>
-              </div>
-              <div>
-                <h4 class="font-bold text-indigo-700">Skill 负责「应该怎么做」</h4>
-                <p class="text-gray-600 text-sm mt-1">提供专业流程和最佳实践</p>
-              </div>
-            </div>
-
-            <div class="flex items-start p-4 bg-blue-50 rounded-lg">
-              <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
-                <i class="fas fa-robot text-white"></i>
-              </div>
-              <div>
-                <h4 class="font-bold text-blue-700">Agent 只是执行载体</h4>
-                <p class="text-gray-600 text-sm mt-1">协调和执行任务</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white p-8 rounded-2xl">
-        <div class="flex items-center justify-center">
-          <i class="fas fa-quote-left text-4xl opacity-50 mr-4"></i>
-          <p class="text-xl font-medium">
-            MCP 负责连接外部世界,Skill 负责提供专业判断,Agent 本身只是一个执行载体
-          </p>
-          <i class="fas fa-quote-right text-4xl opacity-50 ml-4"></i>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Example Section -->
   <section id="example" class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -516,7 +618,7 @@
         <h2 class="text-4xl font-bold mb-4">具体实例</h2>
         <div class="section-divider w-24 mx-auto mb-6"></div>
         <p class="text-gray-600 text-lg max-w-2xl mx-auto">
-          官方展示了些 Claude Skills,涵盖创意应用到技术任务再到企业工作流程
+          官方展示了些 Claude Skills,涵盖创意应用到技术任务再到企业工作流程，下面是企业工作中的一个例子的Skill
         </p>
       </div>
 
@@ -811,130 +913,6 @@
     </div>
   </section>
 
-  <!-- More Examples Section -->
-  <section class="py-20 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
-        <h2 class="text-4xl font-bold mb-4">更多实例</h2>
-        <div class="section-divider w-24 mx-auto mb-6"></div>
-      </div>
-
-      <div class="bg-white rounded-2xl shadow-lg p-8 mb-8">
-        <div class="flex items-center mb-6">
-          <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-xl flex items-center justify-center mr-4">
-            <i class="fas fa-newspaper text-white text-xl"></i>
-          </div>
-          <div>
-            <h3 class="text-2xl font-bold">article-extractor</h3>
-            <p class="text-gray-600">文章内容提取技能</p>
-          </div>
-        </div>
-        <div class="bg-gray-50 p-6 rounded-xl mb-6">
-          <p class="text-gray-700 mb-4">这个目录的核心功能:</p>
-          <p class="text-gray-600 mb-4">
-            从URL中提取干净的文章内容（博客文章、文章、教程）并保存为可读文本。当用户想要从URL下载、提取或保存文章/博客文章而不需要广告、导航或其他杂乱内容时使用。
-n          </p>
-        </div>
-
-        <div class="grid md:grid-cols-2 gap-6 mb-6">
-          <div class="bg-purple-50 p-6 rounded-xl">
-            <h4 class="font-bold mb-4 flex items-center">
-              <i class="fas fa-cogs text-purple-600 mr-2"></i>
-              SKILL.md 结构
-            </h4>
-            <div class="space-y-3 text-sm">
-              <div class="flex items-start">
-                <i class="fas fa-check-circle text-purple-600 mr-2 mt-1"></i>
-                <span class="text-gray-700">技能名称和描述</span>
-              </div>
-              <div class="flex items-start">
-                <i class="fas fa-check-circle text-purple-600 mr-2 mt-1"></i>
-                <span class="text-gray-700">使用场景说明</span>
-              </div>
-              <div class="flex items-start">
-                <i class="fas fa-check-circle text-purple-600 mr-2 mt-1"></i>
-                <span class="text-gray-700">工具安装检查方法</span>
-              </div>
-              <div class="flex items-start">
-                <i class="fas fa-check-circle text-purple-600 mr-2 mt-1"></i>
-                <span class="text-gray-700">三种提取方法（reader、trafilatura、备用方案）</span>
-              </div>
-              <div class="flex items-start">
-                <i class="fas fa-check-circle text-purple-600 mr-2 mt-1"></i>
-                <span class="text-gray-700">完整工作流程</span>
-              </div>
-              <div class="flex items-start">
-                <i class="fas fa-check-circle text-purple-600 mr-2 mt-1"></i>
-                <span class="text-gray-700">错误处理和最佳实践</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="bg-indigo-50 p-6 rounded-xl">
-            <h4 class="font-bold mb-4 flex items-center">
-              <i class="fas fa-layer-group text-indigo-600 mr-2"></i>
-              技能特点
-            </h4>
-            <div class="space-y-3 text-sm">
-              <div class="flex items-start">
-                <i class="fas fa-star text-indigo-600 mr-2 mt-1"></i>
-                <span class="text-gray-700">按优先级检查工具（reader → trafilatura → fallback）</span>
-              </div>
-              <div class="flex items-start">
-                <i class="fas fa-star text-indigo-600 mr-2 mt-1"></i>
-                <span class="text-gray-700">自动提取文章标题作为文件名</span>
-              </div>
-              <div class="flex items-start">
-                <i class="fas fa-star text-indigo-600 mr-2 mt-1"></i>
-                <span class="text-gray-700">清理文件名以适应文件系统</span>
-              </div>
-              <div class="flex items-start">
-                <i class="fas fa-star text-indigo-600 mr-2 mt-1"></i>
-                <span class="text-gray-700">提取后显示预览（前10行）</span>
-              </div>
-              <div class="flex items-start">
-                <i class="fas fa-star text-indigo-600 mr-2 mt-1"></i>
-                <span class="text-gray-700">移除导航、广告、评论等杂乱内容</span>
-              </div>
-              <div class="flex items-start">
-                <i class="fas fa-star text-indigo-600 mr-2 mt-1"></i>
-                <span class="text-gray-700">支持多种语言和网站结构</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-gradient-to-r from-green-50 to-emerald-50 p-6 rounded-xl">
-          <div class="flex items-start">
-            <div class="flex-shrink-0">
-              <i class="fas fa-lightbulb text-3xl text-green-600"></i>
-            </div>
-            <div class="ml-6">
-              <h4 class="text-xl font-bold mb-3">设计亮点</h4>
-              <p class="text-gray-700 mb-4">
-                这个目录体现了 Skill 的核心理念：根据任务需求，动态加载相应的专业知识和流程。不是一次性把所有信息都塞给 Agent，而是让 Agent 根据实际情况判断需要什么，然后按需读取。
-              </p>
-              <div class="flex flex-wrap gap-2">
-                <span class="px-3 py-1 bg-white rounded-full text-sm text-gray-700">
-                  <i class="fas fa-check text-green-600 mr-1"></i>按需加载
-                </span>
-                <span class="px-3 py-1 bg-white rounded-full text-sm text-gray-700">
-                  <i class="fas fa-check text-green-600 mr-1"></i>多工具支持
-                </span>
-                <span class="px-3 py-1 bg-white rounded-full text-sm text-gray-700">
-                  <i class="fas fa-check text-green-600 mr-1"></i>错误处理
-                </span>
-                <span class="px-3 py-1 bg-white rounded-full text-sm text-gray-700">
-                  <i class="fas fa-check text-green-600 mr-1"></i>用户反馈
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- References Section -->
   <section class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -1031,10 +1009,10 @@ n          </p>
           Agent 只是入口,Skill 才是资产
         </p>
         <div class="flex justify-center space-x-6 text-gray-400">
-          <a href="#background" class="hover:text-purple-400 transition">背景</a>
-          <a href="#definition" class="hover:text-purple-400 transition">定义</a>
-          <a href="#advantages" class="hover:text-purple-400 transition">优势</a>
-          <a href="#architecture" class="hover:text-purple-400 transition">架构</a>
+          <a href="#what-is" class="hover:text-purple-400 transition">什么是Skills</a>
+          <a href="#why-use" class="hover:text-purple-400 transition">有什么用</a>
+          <a href="#how-to" class="hover:text-purple-400 transition">怎么使用</a>
+          <a href="#improvements" class="hover:text-purple-400 transition">提升方面</a>
           <a href="#example" class="hover:text-purple-400 transition">实例</a>
           <a href="#future" class="hover:text-purple-400 transition">未来</a>
         </div>
